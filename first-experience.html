@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First Experience</title>
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1baff;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .section {
+      text-align: center;
+      margin-bottom: 40px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s forwards ease-in-out;
+    }
+    
+    .section:nth-child(2) {
+      animation-delay: 0.3s;
+    }
+
+    .section:nth-child(3) {
+      animation-delay: 0.6s;
+    }
+
+    .circle {
+      width: 150px;
+      height: 150px;
+      background-color: #ddd;
+      border-radius: 50%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      color: #333333;
+      cursor: pointer;
+      overflow: hidden; 
+      transition: transform 0.3s ease;
+    }
+    
+    .circle:hover {
+      transform: scale(1.1);
+    }
+    
+    .circle img {
+      width: 140%; 
+      height: auto; 
+    }
+    
+    .list {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0 0;
+      text-align: left;
+    }
+    
+    .list li {
+      padding: 5px 0;
+    }
+    
+    .back-button, .next-button {
+      background-color: #38113b;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+      margin: 10px 5px;
+      display: inline-block;
+      transition: background-color 0.3s;
+    }
+
+    .back-button:hover, .next-button:hover {
+      background-color: #6a1a5c;
+    }
+
+    footer {
+      background-color: #38113b;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 40px;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>1st Experience</h1>
+
+    <div class="section">
+      <div class="circle">
+        <img src="image/gambar62.jpeg" alt="Gambar">
+      </div>
+      <ul class="ul">
+        <li>I've just got my P License on age 20 years old</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="circle">
+        <img src="image/gambar63.jpeg" alt="Gambar">
+      </div>
+      <ul class="ul">
+        <li>This is my 1st experience go to Sungai Talan with my girls' classmate together. That was the greatest moment that I have, as I didn't get a chance to experience it during high school.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="circle">
+        <img src="image/gambar64.jpeg" alt="Gambar">
+      </div>
+      <ul class="ul">
+        <li>On that day, me and my roommates hung out together for "Food Hunting" at Mulut Restaurant. I challenged myself to drive from Rembau to Tampin just to improve my driving and get used to it.</li>
+      </ul>
+    </div>
+
+    <div style="text-align: center;">
+      <button class="back-button" onclick="window.location.href='experience.html'">Back to Experience</button>
+      <button class="next-button" onclick="window.location.href='diploma era-experience.html'">Next</button>
+    </div>
+  </div>
+
+  <footer>
+    © 2024 Farzana Aleyya. All rights reserved.
+  </footer>
+</body>
+</html>

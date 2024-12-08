@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diploma Era</title>
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1baff;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #38113b;
+      font-size: 36px;
+      animation: fadeInDown 1.5s;
+    }
+
+    .section {
+      text-align: center;
+      margin-bottom: 40px;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .circle {
+      width: 150px;
+      height: 150px;
+      background-color: #ddd;
+      border-radius: 50%;
+      margin: 0 auto 10px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      color: #333333;
+      cursor: pointer;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .circle:hover {
+      transform: scale(1.1);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .circle img {
+      width: 140%;
+      height: auto;
+    }
+
+    .list {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0 0;
+      text-align: left;
+    }
+
+    .list li {
+      padding: 5px 0;
+      color: #38113b;
+      font-size: 16px;
+    }
+
+    .back-button,
+    .next-button {
+      background-color: #38113b;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+      margin: 10px 5px;
+      font-size: 16px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .back-button:hover,
+
+    .next-button:hover {
+      background-color: #522353;
+      transform: translateY(-3px);
+    }
+
+    footer {
+      background-color: #38113b;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Diploma Era</h1>
+
+    <div class="section">
+      <div class="circle">
+        <img src="image/gambar65.jpeg" alt="Gambar">
+      </div>
+      <ul class="ul">
+        <li>Started Diploma in Information Management at UiTM. I cannot believe that I can survive until then.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="circle">
+        <img src="image/gambar66.jpeg" alt="Gambar">
+      </div>
+      <ul class="ul">
+        <li>Presenting my classmate "5H" for this semester. I will miss our moments together.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="circle">
+        <img src="image/gambar67.jpeg" alt="Gambar">
+      </div>
+      <ul class="ul">
+        <li>First experience getting Dean's List for that semester. Since then, I understand the struggle to maintain it every semester.</li>
+      </ul>
+    </div>
+
+    <div style="text-align: center;">
+      <button class="back-button" onclick="window.location.href='first-experience.html'">Back to 1st Experience</button>
+      <button class="next-button" onclick="window.location.href='achievement-experience.html'">Next</button>
+
+      </button>
+    </div>
+  </div>
+
+
+  <footer>
+    <p>&copy; 2024 Farzana Aleyya. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
+

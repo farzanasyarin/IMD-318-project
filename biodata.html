@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata - Nur Farzana Aleyya</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(243, 215, 232);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #ffc6e2da;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            padding: 12px 25px;
+            margin: 0 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #920357;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin-top: 100px;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .bio-card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+
+        .bio-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .bio-left {
+            flex: 1;
+            padding-right: 30px;
+        }
+
+        .bio-left img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .bio-left img:hover {
+            transform: scale(1.1);
+        }
+
+        .bio-right {
+            flex: 2;
+        }
+
+        .bio-right h1 {
+            color: #af204b;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .bio-right p {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #000000;
+            text-align: center;
+            padding: 4px 0;
+            font-size: 1em;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+        footer p {
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="biodata.html" class="active">Biodata</a>
+        <a href="education.html">Education</a>
+        <a href="experience.html">Experience</a>
+        <a href="gallery.html">Gallery</a>
+    </div>
+
+    <div class="container">
+        <div class="bio-card">
+            <div class="bio-left">
+                <img src="image/gambar biodata.jpeg" alt="Profile Picture">
+            </div>
+            <div class="bio-right">
+                <h1>ABOUT ME</h1>
+                <p><strong>Full Name:</strong> Nur Farzana Aleyya binti Syarin</p>
+                <p><strong>Date of Birth:</strong> 15 June 2004</p>
+                <p><strong>Place of Birth:</strong> Pusat Perubatan Universiti Malaya, Kuala Lumpur</p>
+                <p><strong>Hobbies:</strong> Listening to music, enjoying spicy food like ayam gepuk</p>
+                <p><strong>Favorite Colors:</strong> Pink, Blue, White</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Farzana Aleyya. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
+

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farzanasyarin Gallery</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #c5eed6;
+            color: #333;
+        }
+
+        header {
+            background-color: #abecd1;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            text-decoration: none; 
+            color: #063123;
+            font-weight: bold;
+            font-size: 1.1rem;
+            border-bottom: none; 
+        }
+
+        .gallery-header {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .gallery-header img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid#0d4932;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-header h1 {
+            margin-top: 1rem;
+            color: #375c3f;
+            font-size: 2rem;
+        }
+
+        .albums {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem auto;
+            max-width: 1200px;
+            padding: 0 1rem;
+        }
+
+        .album {
+            text-align: center;
+        }
+
+        .album img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #0d4932;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .album img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .album p {
+            font-size: 1rem;
+            font-weight: bold;
+            color: #333;
+            margin-top: 0.5rem;
+        }
+
+        a {
+            text-decoration: none; 
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #c5eed6;
+            color: #000000;
+            margin-top: 2rem;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="biodata.html">Biodata</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="gallery-header">
+
+        <img src="image/coverphotogallery.jpeg" alt="Profile Picture">
+        <h1>Farzanasyarin's Gallery</h1>
+    </section>
+
+    <section class="albums">
+
+        <div class="album">
+            <a href="me-gallery.html">
+                <img src="image/gambar14.jpeg" alt="Album 1">
+                <p>Me</p>
+            </a>
+        </div>
+
+        <div class="album">
+            <a href="food-gallery.html">
+                <img src="image/favoritethings9.jpeg" alt="Album 2">
+                <p>Food</p>
+            </a>
+        </div>
+
+        <div class="album">
+            <a href="view-gallery.html">
+                <img src="image/view.jpeg" alt="Album 3">
+                <p>View</p>
+            </a>
+        </div>
+
+        <div class="album">
+            <a href="people-gallery.html">
+                <img src="image/people.jpeg" alt="Album 4">
+                <p>People</p>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Farzana Aleyya. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
